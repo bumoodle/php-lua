@@ -1,2 +1,12 @@
 "Lua is a powerful, fast, light-weight, embeddable scripting language." 
 This extension embeds the lua interpreter and offers an OO-API to lua variables and functions.
+
+--------
+
+This branch contains some slight modifications which allow use on Debian/Ubuntu, which places
+its lua libraries in a non-standard location (and gives the libraries a nonstandard name).
+
+To use on Debian/Ubuntu, provide the --with-lua-version flag while configuring:
+
+phpize
+./configure --with-lua-version=5.2
